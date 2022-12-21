@@ -97,7 +97,7 @@ int main(int argc,char* argv[]){
             printf("MAX ID received %s\n\n",buffer);
             if(finind==50){
                 printf("Successfully sent all Strings\n");
-                clock_gettime(CLOCK_MONOTONIC,&end);
+                clock_gettime(CLOCK_MONOTONIC,&e);
                 uint64_t difference=(e.tv_sec-s.tv_sec);
                 long double d,t;
                 d=(long double)(e.tv_nsec-s.tv_nsec)/1000000000;
