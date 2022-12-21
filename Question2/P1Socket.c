@@ -17,7 +17,7 @@ void getRandStr(char randstrs[][12]) {
     }
     
     for(int i = 0; i <= 50; i++) {
-        for(int j = 1; j <= 12; j++) {
+        for(int j = 1; j < 12; j++) {
             randstrs[i][j] = rand() % 26 + 65;
         }
     }
